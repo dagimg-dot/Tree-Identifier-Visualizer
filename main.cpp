@@ -1,8 +1,6 @@
 #include <iostream>
 using namespace std;
 
-int INT_MAX = 250;
-
 struct node {
   int data;
   struct node *right, *left;
@@ -234,6 +232,6 @@ void all(node *root) {
 bool dataTypeChecker(int n) {
   bool cond = cin.fail();
   cin.clear();
-  cin.ignore();
+  cin.ignore(10000, '\n');
   return cond;
 }
